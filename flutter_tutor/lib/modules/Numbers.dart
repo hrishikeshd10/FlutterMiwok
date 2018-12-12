@@ -8,16 +8,17 @@ class Numbers extends StatefulWidget {
 class _NumbersState extends State<Numbers> {
 
   List <numbers> data = [
-    new numbers('Lutti','One'),
-    new numbers('Otiiko','Two'),
-    new numbers('Tolookosu','Three'),
-    new numbers('Oyyisa','Four'),
-    new numbers('Massokka','Five'),
-    new numbers('Temmokka','Six'),
-    new numbers('Kenekaku','Seven'),
-    new numbers('Kawinta','Eight'),
-    new numbers('Wo e','Nine'),
-    new numbers('Na aacha','Ten'),
+     new numbers("one", "lutti"),
+        new numbers("two", "otiiko"),
+        new numbers("three", "tolookosu"),
+        new numbers("four", "oyyisa"),
+        new numbers("five","massokka"),
+        new numbers("six", "temmokka"),
+        new numbers("seven", "kenekaku"),
+        new numbers("eight", "kawinta"),
+        new numbers("nine", "wo'e"),
+        new numbers("ten", "na'aacha")
+
   ];
 
   @override
@@ -46,7 +47,7 @@ class _NumbersState extends State<Numbers> {
 class numbers{
   String miwok;
   String english;
-
+  
  numbers(this.miwok,this.english); 
 }
 
