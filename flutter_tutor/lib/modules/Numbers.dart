@@ -16,7 +16,7 @@ class _NumbersState extends State<Numbers> {
         new numbers("six", "temmokka"),
         new numbers("seven", "kenekaku"),
         new numbers("eight", "kawinta"),
-        new numbers("nine", "wo'e"),
+        new numbers("nine", "wo'e"), 
         new numbers("ten", "na'aacha")
 
   ];
