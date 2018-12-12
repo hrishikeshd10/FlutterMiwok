@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'About.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -20,7 +21,12 @@ TabController controller;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Miwok Tutor'),actions: <Widget>[new Icon(Icons.more_vert)], 
+      appBar: AppBar(title: Text('Miwok Tutor'),actions: <Widget>[new IconButton(icon:Icon(Icons.info),onPressed: (){
+        Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => About()),
+  );
+      },),], 
       bottom: new TabBar(
         controller: controller,
         tabs: <Widget>[
