@@ -17,7 +17,7 @@ class _NumbersState extends State<Numbers> {
         new numbers("seven", "kenekaku"),
         new numbers("eight", "kawinta"),
         new numbers("nine", "wo'e"), 
-        new numbers("ten", "na'aacha")
+        new numbers("ten", "na'aacha"),
 
   ];
 
@@ -25,12 +25,13 @@ class _NumbersState extends State<Numbers> {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: new ListView.builder(
+        itemCount: data.length,
         itemBuilder: (context,i){
            return Column(children: <Widget>[
              new Divider(height: 3.0,),
              new ListTile(
-               leading: Icon(Icons.play_arrow),
-               trailing: new CircleAvatar(backgroundColor: Colors.green,),
+               leading: new CircleAvatar(backgroundColor: Colors.green,),
+               trailing: Icon(Icons.play_arrow) ,
                title: Text(data[i].miwok,style: TextStyle(fontSize: 20.0),),
                subtitle: Text(data[i].english),
                contentPadding: EdgeInsets.symmetric(vertical: 18.0,horizontal: 18.0),

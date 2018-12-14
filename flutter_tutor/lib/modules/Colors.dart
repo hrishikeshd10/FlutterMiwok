@@ -24,12 +24,13 @@ class _ColorssState extends State<Colorss> {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: new ListView.builder(
+        itemCount: data.length ,
         itemBuilder: (context,i){
            return Column(children: <Widget>[
              new Divider(height: 3.0,),
              new ListTile(
-               leading: Icon(Icons.play_arrow),
-               trailing: new CircleAvatar(backgroundColor: data[i].col),
+               leading: new CircleAvatar(backgroundColor: data[i].col),
+               trailing: Icon(Icons.play_arrow),
                title: Text(data[i].miwok,style: TextStyle(fontSize: 20.0),),
                subtitle: Text(data[i].english),
                contentPadding: EdgeInsets.symmetric(vertical: 18.0,horizontal: 18.0),

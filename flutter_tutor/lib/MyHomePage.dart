@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'About.dart';
+import 'modules/Numbers.dart';
+import 'modules/Family.dart';
+import 'modules/Colors.dart';
+import 'modules/Phrases.dart';
+
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -36,6 +41,16 @@ TabController controller;
           new Tab(child: Text('Phrases'),icon: Icon(Icons.comment))         
         ],
       ) ,),
+
+      body: new TabBarView(
+        controller: controller,
+        children: <Widget>[
+          new  Numbers(),
+          new Family(),
+          new Colorss(),
+          new Phrases()
+        ],
+      ),
 
     );
   }
